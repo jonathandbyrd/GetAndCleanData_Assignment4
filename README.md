@@ -12,21 +12,25 @@ BACKGROUND
         The original experiments were carried out on 30 subjects and a random group was selected to be the "training" group and the rest were by default part of the "test" group. The data was supplied as a .zip file that contain two folders: train and test which contain the file of importance. The strategy will be to require the user/tester to unzip the zip archive, rename the folder to "smartphonedata" and copy it to the working directory of R. From that point the scripts will combine the two data sets that had been separated into "test" and "train" and then selecting the variables of interest for later tidying and analysis.
 
 FILES
-        smartphonedata/test/
+        UCI HAR Dataset/test/
                 subject_test.txt
                 y_test.txt
                 X_test.txt
         
-        smartphonedata/train/
+        UCI HAR Dataset/train/
                 subject_train.txt
                 y_train.txt
                 X_train.txt
+        
+        UCI HAR Dataset/
+                activity_labels.txt
+                features.txt
 
 SCRIPT
         run_analysis.R
 
 INSTRUCTIONS
         1. unzip the data archive file: getdata-projectfiles-UCI HAR Dataset.zip
-        2. rename the resulting unzipped folder to: "smartphonedata"
-        3. copy this folder into the working directory of R
-        4. copy the script file "run_analysis.R" to the working directory of R
+        2. copy this unzipped folder into the working directory of R
+        3. copy the script file "run_analysis.R" to the working directory of R
+        4. execute the function "run_analysis()"
