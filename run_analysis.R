@@ -44,7 +44,7 @@ run_analysis <- function() {
         meanstddata <- rbind(combinedtest, combinedtrain)
         
         ## group by subject and activity
-        bySubjectByActivity <- group_by(meanstddata, subject, activitylabels)
+        bySubjectByActivity <- group_by(meanstddata, subject, activity)
         
         ## apply the mean over each column/variable of the grouped data
         avgs <- summarize_each(bySubjectByActivity, funs(mean))
