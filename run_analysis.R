@@ -32,7 +32,8 @@ run_analysis <- function() {
         ## we'll do so by joining the two data frames (an inner join)
         trainActivityLabels <- merge(trainActivity, activityData, by.x = "activitytested", by.y = "V1", all = FALSE)
         
-        traindata <- read.fwf("./UCI HAR Dataset/train/X_train.txt", widths = rep(c(16), length(featureRaw)), col.names = featureRaw)
+        ##traindata <- read.fwf("./UCI HAR Dataset/train/X_train.txt", widths = rep(c(16), length(featureRaw)), col.names = featureRaw)
+        traindata <- read.table("./UCI HAR Dataset/train/X_train.txt", col.names = featureRaw)
         
         ##select the important columns
         subsetTrainData <- select(traindata, grep("(mean|std)", featureRaw))
