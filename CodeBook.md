@@ -1,3 +1,5 @@
+NOTE: VIEW THE .MD FILES IN RAW MODE ON GITHUB
+
 The following describes the columns of this final tiny data set (avgs)
 
 VARIABLE NAME                           DESCRIPTION
